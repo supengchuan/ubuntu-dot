@@ -10,10 +10,10 @@ feh --randomize --bg-fill ~/Pictures/Wallpapers/wallhaven-z81ovo.png
 #feh --randomize --bg-fill ~/Pictures/Wallpapers/wallhaven-exoovl.png
 pgrep -x polybar > /dev/null || ~/.config/polybar/launch.sh &
 pgrep -x picom > /dev/null || picom &
-pgrep -x fcitx5 > /dev/null || fcitx5 &
+#pgrep -x fcitx5 > /dev/null || fcitx5 &
 pgrep autokey > /dev/null || autokey &
 #pgrep -x fcitx > /dev/null || fcitx &
-#pgrep -x ibus-daemon > /dev/null || ibus-daemon -rxR &
+pgrep -x ibus-daemon > /dev/null || ibus-daemon -rxR &
 
 #pgrep -x clash > /dev/null || /opt/clash/clash &
 vmware-user-suid-wrapper
